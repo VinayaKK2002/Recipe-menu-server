@@ -14,7 +14,7 @@ pfServer.use(express.json())
 pfServer.use(router)
 
 
-const PORT=3000 || process.env.PORT
+const PORT=process.env.PORT || 3000
 
 pfServer.listen(PORT,()=>{
     console.log(`my pfserver is running port is ${PORT} and waiting for client request`);
